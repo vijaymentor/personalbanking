@@ -1,0 +1,11 @@
+version: '2'
+services:
+  personalbanking-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/personalbanking/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=personalbanking
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
